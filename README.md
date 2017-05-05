@@ -148,13 +148,14 @@ You should add following code to AppDelegate.m for keeping launch image:
 
 ## Getting started  
 
-Import `react-native-splash-screen` in your JS file.
+Import `react-native-splash-screen` in the JS file that renders the first page of your app. (E.g. index.js or LaunchScreen.js)
 
 `import SplashScreen from 'react-native-splash-screen'`    
 
 ### Android:
 
-Add a file called launch_screen.xml in the layout as the splash screen.
+Create a file called launch_screen.xml in the layout folder. `./android/app/src/main/res/layout`
+This will render the splash screen.
 
 ```
 <?xml version="1.0" encoding="utf-8"?>
@@ -164,12 +165,17 @@ Add a file called launch_screen.xml in the layout as the splash screen.
     android:background="@drawable/launch_screen">
 </LinearLayout>
 ```
+Now you need to upload an image that will be rendered in the launch_screen.xml. 
+That image will be uploaded in the drawable folder. The directory path is : `./android/app/src/main/res/drawable-{resolution}`
+If you don't have drawable folder(s), create some regarding the resolution you support. For example, 
+ - `./android/app/src/main/res/drawable-xhdpi`
+ - `./android/app/src/main/res/drawable-xxhdpi`
 
 **Optional steps：**
 
 You can also via the following steps to set the window transparent.
 
-open `android/app/src/main/res/values/styles.xml`, to add `<item name="android:windowIsTranslucent">true</item>`,like this :
+open `./android/app/src/main/res/values/styles.xml`, to add `<item name="android:windowIsTranslucent">true</item>`,like this :
 
 ```xml
 <resources>
