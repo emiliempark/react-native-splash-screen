@@ -148,14 +148,14 @@ You should add following code to AppDelegate.m for keeping launch image:
 
 ## Getting started  
 
-Import `react-native-splash-screen` in the JS file that renders the first page of your app. (E.g. index.js or LaunchScreen.js)
+Import `react-native-splash-screen` in the JS file that renders the first page of your app. (E.g. `index.js` or `LaunchScreen.js`)
 
 `import SplashScreen from 'react-native-splash-screen'`    
 
 ### Android:
 
-Create a file called launch_screen.xml in the layout folder. `./android/app/src/main/res/layout`
-This will render the splash screen.
+Create a file called `launch_screen.xml` in the layout folder. `./android/app/src/main/res/layout`
+This xml file will render the splash screen.
 
 ```
 <?xml version="1.0" encoding="utf-8"?>
@@ -167,7 +167,7 @@ This will render the splash screen.
 ```
 Now you need to upload an image that will be rendered in the launch_screen.xml. 
 That image will be uploaded in the drawable folder. The directory path is : `./android/app/src/main/res/drawable-{resolution}`
-If you don't have drawable folder(s), create some regarding the resolution you support. For example, 
+If you don't have drawable folder(s), create some regarding the resolutions you support. For example, 
  - `./android/app/src/main/res/drawable-xhdpi`
  - `./android/app/src/main/res/drawable-xxhdpi`
 
