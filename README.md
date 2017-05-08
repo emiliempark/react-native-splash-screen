@@ -167,9 +167,13 @@ This xml file will render the splash screen.
 ```
 Now you need to upload an image that will be rendered in the launch_screen.xml. 
 That image will be uploaded in the drawable folder. The directory path is : `./android/app/src/main/res/drawable-{resolution}`
-If you don't have drawable folder(s), create some regarding the resolutions you support. For example, 
- - `./android/app/src/main/res/drawable-xhdpi`
- - `./android/app/src/main/res/drawable-xxhdpi`
+If you don't have drawable folder(s), create some regarding the resolutions you support as following:
+    * `./android/app/src/main/res/drawable-ldpi` 
+    * `./android/app/src/main/res/drawable-mdpi` 
+    * `./android/app/src/main/res/drawable-hdpi` 
+    * `./android/app/src/main/res/drawable-xhdpi`
+    * `./android/app/src/main/res/drawable-xxhdpi`
+    * `./android/app/src/main/res/drawable-xxhdpi`
 
 **Optional steps：**
 
